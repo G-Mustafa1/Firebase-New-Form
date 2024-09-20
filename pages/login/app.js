@@ -43,7 +43,7 @@ btn.addEventListener('click', ()=> {
     }
     else{
       if(select === "Admin"){
-         window.location.href = `../studentMarks/index.html?uid=${user.uid}`;
+         window.location.href = `../studentMarks/index.html`;
       }
       else if(select === "Student"){
          window.location.href = "../studentPortal/index.html";
