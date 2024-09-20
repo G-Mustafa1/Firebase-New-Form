@@ -36,7 +36,7 @@ const signOutButton = document.getElementById("sign-out");
             text: "User signed out successfully.",
             icon: "success"
          });
-      window.location.href = "/pages/login/index.html";     
+      window.location.href = "../login/index.html";     
    }catch (error) {
       const errorMessage = error.message;
       Swal.fire({
@@ -55,7 +55,7 @@ onAuthStateChanged(auth, (user) => {
      setupEditButton(); 
      console.log(user.uid)
    } else {
-      window.location.href = "/index.html";     
+      window.location.href = "./index.html";     
      console.error("No user is signed in.");
    }
  });
