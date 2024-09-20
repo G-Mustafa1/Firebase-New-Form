@@ -32,7 +32,7 @@ sign_out.addEventListener('click', async ()=> {
             text: "User signed out successfully.",
             icon: "success"
          });
-      window.location.href = "/pages/login/index.html";     
+      window.location.href = "../login/index.html";     
    }catch (error) {
       const errorMessage = error.message;
       Swal.fire({
