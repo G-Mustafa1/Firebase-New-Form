@@ -74,7 +74,7 @@ btn.addEventListener('click', async () => {
       const docRef = await addDoc(collection(db, "student"), obj )
       console.log("Document written with ID: ", docRef.id);
       // document.getElementById('contanir')reset()
-         window.location.href = "/pages/login/index.html";
+         window.location.href = "./pages/login/index.html";
       // },3000)
       // Swal.fire({
       //    title: "success",
