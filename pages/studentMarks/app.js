@@ -48,6 +48,8 @@ btn.addEventListener('click', async ()=>{
          text: "Result Submitted successfully!",
          icon: "success"
       });
+            window.location.href = "../admin/index.html"
+
       // document.getElementById("addStudentForm").reset(); // Reset form fields
    }catch(error){
       const errorMessage = error.message;
