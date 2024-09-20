@@ -55,7 +55,7 @@ onAuthStateChanged(auth, (user) => {
      setupEditButton(); 
      console.log(user.uid)
    } else {
-      window.location.href = "./index.html";     
+      window.location.href = "../signup/index.html";     
      console.error("No user is signed in.");
    }
  });
