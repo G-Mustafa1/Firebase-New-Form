@@ -55,12 +55,10 @@ async function fetchStudents() {
    const studentsContainer = document.getElementById("student");
    const querySnapshot = await getDocs(collection(db, "student"));
  
-   let serialNumber = 1; // Initialize serial number
+   let serialNumber = 1; 
    querySnapshot.forEach((doc) => {
      const student = doc.data();
      const studentDiv = document.createElement("div");
-   //   studentDiv.className = "border border-gray-300 p-4 rounded mb-4";
-             //  <p><strong>Serial No:</strong> ${serialNumber}</p>
 
      studentDiv.innerHTML = `
            <p><strong>Serial No:</strong> ${serialNumber}</p>
@@ -72,7 +70,7 @@ async function fetchStudents() {
          `;
  
      studentsContainer.appendChild(studentDiv);
-     serialNumber++; // Increment serial number
+     serialNumber++; 
    });
  }
  
@@ -80,7 +78,7 @@ async function fetchStudents() {
    const resultsContainer = document.getElementById("student_result");
    const querySnapshot = await getDocs(collection(db, "Result"));
  
-   let serialNumber = 1; // Initialize serial number
+   let serialNumber = 1; 
    querySnapshot.forEach((doc) => {
      const result = doc.data();
    //   console.log(result)
@@ -97,18 +95,18 @@ async function fetchStudents() {
          `;
  
      resultsContainer.appendChild(resultDiv);
-     serialNumber++; // Increment serial number
+     serialNumber++;
    });
  }
  
  async function deleteResult(id) {
    await deleteDoc(doc(db, "Result", id));
-   window.location.reload(); // Refresh to show updated results
+   window.location.reload(); 
  }
  
  async function deleteStudent(id) {
    await deleteDoc(doc(db, "student", id));
-   window.location.reload(); // Refresh to show updated students
+   window.location.reload(); 
  }
  
  document
