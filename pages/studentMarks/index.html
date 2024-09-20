@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Marks</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav">
+            <h1>Admin Form</h1>
+            <button id="view"> <a style="text-decoration: none; color: azure;" href="/pages/admin/index.html"> View</a></button>
+      </div>
+   </div>
+   <div class="container">
+      <h1>Upload Student Marks</h1>
+      <div id="addStudentForm">
+          <div class="form-group">
+             <select name="" id="select">
+               <option value="" disabled selected>Select a course</option>
+               <option value="Web Development">Web Development</option>
+               <option value="Graphic Designing">Graphic Designing</option>
+               <option value="Digital Marketing">Digital Marketing</option>
+               <option value="Cyber Security">Cyber Security</option>
+               <option value="Amason">Amazon</option>
+             </select>
+              <!-- <label for="Course">Course:</label>
+              <input type="text" id="course" placeholder="Course"> -->
+            </div>
+          <div class="form-group">
+              <label for="lastName">Student Id:</label>
+              <input type="text" id="studentId" placeholder="Student ID">
+            </div>
+          <div class="form-group">
+              <label for="email">Marks:</label>
+              <input type="number" id="marks" placeholder="Marks">
+            </div>
+          <div class="form-group">
+              <label for="password">Total Marks:</label>
+              <input type="number" id="totalMarks" placeholder="Total Marks">
+            </div>
+          <div class="form-group">
+              <label for="cnic">Grade:</label>
+              <input type="text" id="grade" placeholder="Grade">
+            </div>
+          <button id="btn" type="submit">Upload Marks</button>
+          <p id="errorAddStudent" class="error"></p>
+         </div>
+   </div>
+      <script type="module" src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

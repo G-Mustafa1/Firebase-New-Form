@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" /> -->
+</head>
+<body>
+  <div id="contanir" class="container">
+   <h1>Add Student</h1>
+   <div id="addStudentForm">
+       <div class="form-group">
+           <label for="firstName">First Name:</label>
+           <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+       </div>
+       <div class="form-group">
+           <label for="lastName">Last Name:</label>
+           <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+       </div>
+       <div class="form-group">
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" placeholder="Enter email" required>
+       </div>
+       <div class="form-group">
+           <label for="password">Password:</label>
+           <input type="password" id="password" name="password" placeholder="Enter password" required>
+       </div>
+       <div class="form-group">
+           <label for="cnic">CNIC:</label>
+           <input type="number" id="cnic" name="cnic" placeholder="Enter CNIC" required>
+       </div>
+       <button id="btn" type="submit">Add Student</button>
+       <a style="text-decoration: none; text-align: center;" href="/pages/login/index.html">Already Have account</a>
+       <p id="errorAddStudent" class="error"></p>
+      </div>
+</div>
+   <script type="module" src="app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script> -->
+</body>
+</html>

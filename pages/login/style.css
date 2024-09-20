@@ -1,0 +1,80 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   /* width: 90%; */
+   /* max-width: 600px; */
+   width: 450px;
+   margin: 50px auto;
+   padding: 20px 35px;
+   background: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+}
+
+h1 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+#addStudentForm {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+}
+
+.form-group {
+   margin-bottom: 15px;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   /* justify-content: center; */
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.form-group select {
+   width: 100%;
+   padding: 15px 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 15px;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 15px 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 15px;
+}
+
+button {
+   padding: 15px 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #0051ff;
+   color: #fff;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+button:hover {
+   background-color: #0033a0;
+}
+
+.error {
+   color: red;
+   font-size: 14px;
+   margin-top: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Log In</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Log In</h1>
+      <div id="addStudentForm">
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter password" required/>
+          </div>
+          <div class="form-group">
+             <label for="">User Type:</label>
+             <select name="" id="select" required>
+               <option value="" disabled selected>Select user type</option>
+                <option value="Admin">Admin</option>
+                <option value="Student">Student</option>
+             </select>
+          </div>
+          <button id="btn" type="submit">Log In</button>
+          <a style="text-decoration: none; text-align: center; margin-top: 5px;" href="/index.html">Create a new accout</a>
+          <p id="errorAddStudent" class="error"></p>
+         </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script type="module" src="app.js"></script>
+</body>
+</html>
