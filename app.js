@@ -1,6 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
-import { getAuth, onAuthStateChanged ,createUserWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+import { getAuth, onAuthStateChanged ,createUserWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
 import {
    getFirestore,
    collection,
@@ -98,4 +98,5 @@ btn.addEventListener('click', async () => {
 });
 
  
+
 
