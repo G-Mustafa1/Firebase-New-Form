@@ -37,7 +37,7 @@ btn.addEventListener('click', ()=> {
       btn.style.backgroundColor = "#0051ff"
       Swal.fire({
          title: "error",
-         text: "hh",
+         text: "Please Select Option",
          icon: "error"
        });
     }
@@ -64,4 +64,5 @@ btn.addEventListener('click', ()=> {
        });
   });
 })
+
 
